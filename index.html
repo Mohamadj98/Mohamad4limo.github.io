@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohamad Almajarish - Elegant Limousine Service</title>
+  <title>Mohamad Almajarish - Limousine Service</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -65,11 +65,12 @@
       font-weight: bold;
       color: black;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      cursor: pointer;
+      transition: all 0.2s ease;
     }
     .service-card:hover {
       background: gold;
       color: black;
-      cursor: pointer;
     }
     label {
       font-weight: bold;
@@ -111,8 +112,8 @@
 </head>
 <body>
   <header>
-    <h1>Mohamad Almajarish - Elegant Limousine Service</h1>
-    <p>Call us at <strong>678-851-6247</strong></p>
+    <h1>Mohamad Almajarish - Luxury Limousine Service</h1>
+    <p>Call us at <strong>404-895-1252</strong></p>
   </header>
 
   <!-- Hero SUV Image -->
@@ -124,12 +125,12 @@
     <!-- Services Section -->
     <h2>Our Services</h2>
     <div class="services">
-      <div class="service-card">Airport & Layovers</div>
-      <div class="service-card">Business & Executive</div>
-      <div class="service-card">Quiet Ceremonies</div>
-      <div class="service-card">Sightseeing & Tours</div>
-      <div class="service-card">Weddings & Proms</div>
-      <div class="service-card">Party Vibes</div>
+      <div class="service-card" onclick="addService('Airport & Layovers')">Airport & Layovers</div>
+      <div class="service-card" onclick="addService('Business & Executive')">Business & Executive</div>
+      <div class="service-card" onclick="addService('Quiet Ceremonies')">Quiet Ceremonies</div>
+      <div class="service-card" onclick="addService('Sightseeing & Tours')">Sightseeing & Tours</div>
+      <div class="service-card" onclick="addService('Weddings & Proms')">Weddings & Proms</div>
+      <div class="service-card" onclick="addService('Party Vibes')">Party Vibes</div>
     </div>
 
     <!-- Quote Form -->
@@ -182,5 +183,18 @@
   <footer>
     <p>&copy; 2025 Mohamad Almajarish Limousine Service. All rights reserved.</p>
   </footer>
+
+  <script>
+    function addService(serviceName) {
+      const details = document.getElementById('details');
+      if (details.value) {
+        details.value += ', ' + serviceName;
+      } else {
+        details.value = serviceName;
+      }
+      // Optional: scroll to form so guest sees it
+      details.scrollIntoView({behavior: "smooth"});
+    }
+  </script>
 </body>
 </html>
