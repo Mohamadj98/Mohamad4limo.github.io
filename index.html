@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamad Almajarish - Limousine Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: black;
+      color: gold;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: black;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    textarea {
+      height: 100px;
+    }
+    button {
+      background: black;
+      color: gold;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: gold;
+      color: black;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mohamad Almajarish - Luxury Limousine Service</h1>
+    <p>Call us at <strong>404-895-1252</strong></p>
+  </header>
+
+  <main>
+    <h2>Get a Quote</h2>
+    <form>
+      <label for="name">Your Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="date">Date of Trip</label>
+      <input type="date" id="date" name="date">
+
+      <label for="pickup">Pickup Address *</label>
+      <input type="text" id="pickup" name="pickup" required>
+
+      <label for="dropoff">Drop Off Address</label>
+      <input type="text" id="dropoff" name="dropoff">
+
+      <label for="passengers">Number of Passengers</label>
+      <input type="number" id="passengers" name="passengers" min="1">
+
+      <label for="vehicle">Vehicle Preference</label>
+      <select id="vehicle" name="vehicle">
+        <option value="">Select a vehicle</option>
+        <option value="SUV">SUV</option>
+        <option value="Sedan">Sedan</option>
+        <option value="Stretch Limo">Stretch Limo</option>
+        <option value="Party Bus">Party Bus</option>
+      </select>
+
+      <label for="pickup-time">Pickup Time</label>
+      <input type="time" id="pickup-time" name="pickup-time">
+
+      <label for="end-time">End Time</label>
+      <input type="time" id="end-time" name="end-time">
+
+      <label for="hours">Total Number of Hours</label>
+      <input type="number" id="hours" name="hours" min="1" value="1">
+
+      <label for="details">Additional Details</label>
+      <textarea id="details" name="details" placeholder="Please add any special requests here"></textarea>
+
+      <button type="submit">Submit Quote Request</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mohamad Almajarish Limousine Service. All rights reserved.</p>
+  </footer>
+</body>
+</html>
